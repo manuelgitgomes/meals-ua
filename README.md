@@ -1,17 +1,22 @@
-# Meals@UA
+# Meals@UA-UV
+
 
 ### A python script that presents the menus at all of the University of Aveiro's canteens.
 
 ![example](https://i.imgur.com/B0glhF6.png)
 
 Migrated from [this repository](https://github.com/RodrigoRosmaninho/ementas-ua) and [this repository](https://github.com/tuxPT/ua-meals-script).
+
+### Preamble
+
+This is a fork of the original [meals-ua](https://github.com/GLUA-UA/meals-ua) to avoid using the systems python and pip, and to make it easier to install and use.
+
+This fork uses [uv](https://docs.astral.sh/uv/), a new python project manager.
+
+
 #### Requirements:
 
-- Python 3
-- Additional pip libraries installed automatically by [install.sh](https://github.com/GLUA-UA/meals-ua/blob/master/install.sh) or by running:
-```
-pip3 install --user -r requirements.txt
-```
+- [UV](https://docs.astral.sh/uv/getting-started/installation/) 
 
 By default, the script presents the menus of the current day at the 3 canteens located on the main campus.
 
@@ -19,9 +24,9 @@ You can, however, use additional arguments such as **-w** or **-l** to show menu
 
 #### Usage:
 
-To setup everything, just run:
+To setup everything, clone this repo and just run:
 ```
-wget https://raw.githubusercontent.com/GLUA-UA/meals-ua/master/install.sh -O - | sh
+./install.sh
 ```
 Which installs the necessary dependencies and places a symlink in **$HOME/.local/bin**
 
@@ -47,6 +52,7 @@ ementas
 ![help](https://i.imgur.com/7nbEmkl.gif)
 
 #### Thanks:
+- [GLUA](https://glua.ua.pt/)
 - [Luís Silva](https://github.com/LudeeD)
 - University of Aveiro's public API. More information about the specific menu API [here](http://api.web.ua.pt/en/services/universidade_de_aveiro/ementas).
 
